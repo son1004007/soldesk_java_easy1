@@ -131,6 +131,8 @@ public class Y0119 {
 		System.out.println((r1.a)*(r1.b));
 		System.out.println((r2.a)*(r2.b));
 		
+		
+		
 	}
 }
 

@@ -21,15 +21,15 @@ public class Y0118 {
 
 	static void FileW() throws IOException { // 파일에 문자를 1byte씩 쓰기
 		System.out.println("FileW");
-		FileWriter fw = new FileWriter("test1234.txt");
-		BufferedWriter out = new BufferedWriter(fw);
+		FileWriter fw = new FileWriter("test1234.txt"); // 파일에 쓰기
+		BufferedWriter out = new BufferedWriter(fw); // 버퍼(out)에 있는 내용을 파일(fw)에 쓰기
 		
 		
-		out.write("안녕");
-		out.newLine();
-		out.write("오늘은 월요일");
-		out.newLine();
-		out.write("aaa.naver.com");
+		out.write("안녕"); // 버퍼(>파일)에 안녕 입력
+		out.newLine(); // 버퍼(>파일) 다음줄넘기기
+		out.write("오늘은 월요일"); // 버퍼(>파일)에 오늘은 월요일 입력
+		out.newLine(); // 버퍼(>파일) 다음줄 넘기기
+		out.write("aaa.naver.com"); // 버퍼(>파일)에 aaa.naver.com
 		
 		out.close();
 		
@@ -37,13 +37,13 @@ public class Y0118 {
 	}
 	static void FileR() throws IOException { // 파일의 문자를 1byte씩 읽기
 		// 파일 문자 출력 1byte씩
-		BufferedReader in = new BufferedReader(new FileReader("test1234.txt"));
+		BufferedReader in = new BufferedReader(new FileReader("test1234.txt")); // 파일을 읽어서 버퍼 in에 적제
 		// BufferedReader 클래스는 1바이트씩 저장
 		System.out.println("FileR");
 		
 		String str;
 		while(true) { // 무한 반복 
-			str = in.readLine();
+			str = in.readLine(); // 버퍼의 1줄을 문자열에 입력
 			if(str==null) { // 문자열이 없으면(null)
 				break; // 무한루프 종료
 			}
@@ -57,11 +57,11 @@ public class Y0118 {
 	
 	// test5.dat 를 읽어와서 바이트 배열에 다시 저장
 	static void FileIS() throws IOException {
-		FileInputStream in = null; // 파일 입력값 비우기
+		FileInputStream in = null; // 파일 입력값 비우기 
 		ByteArrayOutputStream out = null; // 출력값 비우기
 		
 		try { // 예외처리 시작
-			in = new FileInputStream("test5.dat"); // 객체명 in에 파일(test5.dat)의 내용을 입력
+			in = new FileInputStream("test5.dat"); // 객체명 in에 파일(test5.dat)을 들여온다.
 			out= new ByteArrayOutputStream(); // 객체명 out이라는 배열 생성
 			int r = -1; // 정수형 -1
 				while((r=in.read()) != -1) { // r은 in파일을 읽는 객체로, -1이(읽을 값이) 아닐때(없을때)까지 반복
@@ -88,7 +88,7 @@ public class Y0118 {
 		try {
 			byte b[] = new byte[] {1,2,3,5,6};
 			in2 = new ByteArrayInputStream(b);
-			out2 = new FileOutputStream("test5.dat");
+			out2 = new FileOutputStream("test5.dat"); // 파일을 내보낸다.
 		
 			int r2 = -1;
 			while((r2=in2.read()) != -1) {
@@ -311,7 +311,23 @@ public class Y0118 {
 		
 		
 		//CLASS 시작
-		
+//		FileWriter // 파일에 쓴다.
+//		BufferedWriter // 버퍼에 쓴다.
+//
+//		FileReader // 파일을 읽는다.
+//		BufferedReader // 버퍼에 읽는다.
+//
+//		FileInputStream // 파일을 들여온다.(읽어온다.)
+//		ByteArrayOutputStream // 바이트 배열을 출력한다.
+//
+//		FileOutputStream // 파일에 내보낸다.(쓴다.)
+//		ByteArrayInputStream // 바이트 배열을 읽어온다.
+//
+//		DataInputStream // 데이터를 들여온다.
+//
+//
+//		InputStreamReader // 내용을 읽어서 들여온다.
+//		
 	}
 	
 	
