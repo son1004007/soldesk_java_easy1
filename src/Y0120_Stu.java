@@ -1,7 +1,7 @@
 import java.io.Serializable;
 
 //20210120 작성
-public class Stu implements Serializable {
+public class Y0120_Stu implements Serializable {
 // 직렬화 인터페이스
 	
 	private String name;
