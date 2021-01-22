@@ -6,7 +6,7 @@ class Total{
 	}
 	void sum(){
 		int sum=0;
-		for (int i=a;i<=b;a++) {
+		for (int i=a;i>=a;a++) {
 			sum+=i;
 		}
 		System.out.println(sum);
