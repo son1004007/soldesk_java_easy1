@@ -26,6 +26,7 @@ public class Y0128_1430 extends JFrame {
 		super("다이얼로그");
 		Container c = getContentPane();
 		c.add(new Dia(), BorderLayout.NORTH);
+		setSize(512,512);
 		setVisible(true);
 	}
 	class Dia extends Panel {
@@ -33,12 +34,17 @@ public class Y0128_1430 extends JFrame {
 		JTextField j1 = new JTextField(10);
 		JButton j2 = new JButton("확인");
 		JButton j3 = new JButton("메시지");
+		
+		
+		
 		Dia() {
 			setBackground(Color.pink);
 			add(j);
 			add(j1);
 			add(j2);
 			add(j3);
+			
+			
 			j.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					String name = JOptionPane.showInputDialog("이름 입력");

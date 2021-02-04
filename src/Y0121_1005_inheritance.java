@@ -19,7 +19,7 @@ public class Y0121_1005_inheritance {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Number.show(30);
+//		Number.show(30);
 		
 		
 	}
