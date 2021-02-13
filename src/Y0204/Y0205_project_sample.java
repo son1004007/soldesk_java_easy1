@@ -41,7 +41,8 @@ public class Y0205_project_sample {
         pNorth.setFont(font);
  
         // 배열 설정 부분
-        String menu[] = { "빅맥버거", "싸이버거", "더블버거", "맘마버거", "김치버거", "새우버거", "라면버거", "치킨버거" };
+        String menu[] = { "빅맥버거", "싸이버거", "더블버거", "맘마버거",
+        		"김치버거", "새우버거", "라면버거", "치킨버거" };
         int price[] = { 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500 };
         JButton bt[] = new JButton[menu.length];
         TextField suja[] = new TextField[menu.length];
