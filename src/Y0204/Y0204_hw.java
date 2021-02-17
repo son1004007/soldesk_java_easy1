@@ -67,6 +67,7 @@ public class Y0204_hw extends JFrame{
 			minusBt[i].setEnabled(false);
 			plusBt[i].setEnabled(false);
 			okBt[i].setEnabled(false);
+			coffCnt[i].setEnabled(false);
 			
 			int j=i;
 			// 커피 버튼 : 다른 버튼 비활성화를 활성화로 변경
@@ -78,6 +79,7 @@ public class Y0204_hw extends JFrame{
 						 minusBt[j].setEnabled(true);
 						 plusBt[j].setEnabled(true);
 						 okBt[j].setEnabled(true);
+						 coffCnt[j].setEnabled(true);
 						 count=0;
 						 }
 					 }
