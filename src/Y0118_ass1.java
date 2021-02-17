@@ -3,18 +3,18 @@ public class Y0118_ass1 {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		//¼÷Á¦ assignmnet. page 397 ¿¹Á¦ 27 ±¸±¸´ÜÀ» ÆÄÀÏ¿¡ Ãâ·Â 
+		//å ì™ì˜™å ì™ì˜™ assignmnet. page 397 å ì™ì˜™å ì™ì˜™ 27 å ì™ì˜™å ì™ì˜™å ì™ì˜™å ì™ì˜™ å ì™ì˜™å ì‹¹ìš¸ì˜™ å ì™ì˜™å ï¿½ 
 		
 		try {
-			PrintWriter pw = new PrintWriter("gugu.txt");
+			PrintWriter pw = new PrintWriter("gugu.txt"); // ì£¼ì¸ê³µì´ë©´ì„œ ì¥ì‹
 			String str="";
 			for(int i =1 ; i<=9 ; i++) {
 				for(int j = 2 ; j<=9 ; j++) {
-//					System.out.print(j+"*"+i+"="+(j*i)+"\t");// °ËÁõ¿ë
+//					System.out.print(j+"*"+i+"="+(j*i)+"\t");// å ì™ì˜™å ì™ì˜™å ì™ì˜™
 					str += j+"*"+i+"="+(j*i)+"\t";
 					
 				}
-//				System.out.println();//°ËÁõ¿ë
+//				System.out.println();//å ì™ì˜™å ì™ì˜™å ì™ì˜™
 				str += "\n";
 			}
 			

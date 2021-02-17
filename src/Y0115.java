@@ -354,7 +354,7 @@ public class Y0115 {
 	   
 	   cnt = tst2.read(array, 0, array.length);
 	   
-	   for(int i=0; i<cnt ; i++) {
+	   for(int i=0; i>cnt ; i++) {
 		   System.out.println(array[i]);
 	   }
 	   tst2.close();
